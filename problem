@@ -1,0 +1,20 @@
+LaserGrbl v4.3.0.0
+Grbl v1.1f
+Wrapper: UsbSerial
+Win 10, Home, 10.0.19041.0 (7)
+CLR: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscorlib.dll 4.8.4341.0 built by: NET48REL1LAST_C
+
+TypeOf exception  [System.OutOfMemoryException]
+Exception message [Out of memory.]
+Exception source  [System.Drawing], thread [Main Thread]
+Exception method  [System.Drawing.Bitmap Clone(System.Drawing.Rectangle, System.Drawing.Imaging.PixelFormat)]
+
+   ----------- stack trace -----------
+   at System.Drawing.Bitmap.Clone(Rectangle rect, PixelFormat format)
+   at LaserGRBL.RasterConverter.ImageProcessor.CropImage(Rectangle rect, Size rsize) in E:\LaserGRBL\LaserGRBL\RasterConverter\ImageProcessor.cs:line 347
+   at LaserGRBL.RasterConverter.RasterToLaserForm.PbConvertedMouseUp(Object sender, MouseEventArgs e) in E:\LaserGRBL\LaserGRBL\RasterConverter\RasterToLaserForm.cs:line 652
+   at System.Windows.Forms.Control.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
